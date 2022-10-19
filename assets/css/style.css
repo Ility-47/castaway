@@ -702,6 +702,7 @@ footer{
     .episodes__btn{
         font-size: 14px;
         height: 30px;
+        width: 100%;
         width: fit-content;
     }
     .episodes__btn a {
