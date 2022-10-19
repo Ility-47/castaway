@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: inherit;}
 body{
     background: #191919;
     color: white;
+    overflow-x: hidden;
 }
 a {
     color: white;
@@ -67,6 +68,11 @@ header{
     padding: 40px 0 93px 0;
     display: flex;
 }
+
+.negr img{
+    width: 100%;
+}
+
 
 .sight{
     width: 40.5%;
@@ -142,6 +148,7 @@ header{
     font-weight: 400;
     font-size: 64px;
     letter-spacing: 2.88px;
+    line-height: 100%;
 }
 
 .episodes__btn{
@@ -155,6 +162,12 @@ header{
     width: -moz-fit-content;
 }
 
+.episodes__item__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .episodes__btn.item{
     width: 182.23px;
     margin-top: 28px;
@@ -163,9 +176,9 @@ header{
 .episodes__btn:hover{
     transition: .7s;
     transform: translateY(-5px);
-    -webkit-box-shadow: 0px 0px 100px 2px #118DA8;
-    -moz-box-shadow: 0px 0px 100px 2px #118DA8;
-    box-shadow: 0px 0px 100px 2px #118DA8;
+    -webkit-box-shadow: 0 0 100px 2px #118DA8;
+    -moz-box-shadow: 0 0 100px 2px #118DA8;
+    box-shadow: 0 0 100px 2px #118DA8;
 }
 
 .episodes__btn a{
@@ -176,6 +189,7 @@ header{
 }
 .episodes__btn a:hover{color: white}
 .episodes__item{
+    justify-content: space-between;
     background-color: #000;
     margin-top: 60px;
     border-radius: 32px;
@@ -185,6 +199,10 @@ header{
 
 .episodes__item__image{
     padding-right: 53px;
+}
+
+.info{
+    width: 70%;
 }
 
 .info__tag{
@@ -205,7 +223,7 @@ header{
 .info__title{
     font-weight: 400;
     font-size: 64px;
-    line-height: 70px;
+    line-height: 110%;
     letter-spacing: 2.56px;
     margin: 18px 0 28px 0;
 }
@@ -213,7 +231,7 @@ header{
 .info__text{
     font-weight: 400;
     font-size: 20px;
-    line-height: 33px;
+    line-height: 165%;
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -228,6 +246,14 @@ header{
     display: flex;
     justify-content: space-between;
     padding-bottom: 200px;
+}
+
+.pivo__photo{
+    width: 110%;
+}
+
+.pivo__photo img{
+    width: 100%;
 }
 
 .biography__btn {
@@ -255,7 +281,7 @@ i{
 .biography__subtext{
     font-weight: 400;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 150%;
     color: #118DA8;
     margin-top: 20px;
 }
@@ -263,7 +289,7 @@ i{
 .biography__title{
     font-weight: 400;
     font-size: 65px;
-    line-height: 79px;
+    line-height: 120%;
     letter-spacing: 2.88px;
 
 }
@@ -271,7 +297,7 @@ i{
 .biography__text{
     font-weight: 400;
     font-size: 22px;
-    line-height: 33px;
+    line-height: 150%;
     color: rgba(255, 255, 255, 0.7);
     width: 85%;
 }
@@ -298,13 +324,13 @@ i{
 .subscribe__suptitle{
     font-weight: 400;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 150%;
     color: #118DA8;
 }
 
 .subscribe__title{
     font-size: 72px;
-    line-height: 79px;
+    line-height: 110%;
     letter-spacing: 2.88px;
     width: 35%;
 }
@@ -315,14 +341,14 @@ i{
 }
 
 .subscribe__form input{
-    width: 522px;
+    width: 100%;
     height: 82px;
     background: #191919;
     border: 1px solid #191919;
     border-radius: 6px;
     font-weight: 400;
     font-size: 24px;
-    line-height: 29px;
+    line-height: 120%;
     color: rgba(255, 255, 255, 0.7);
     padding: 0  20px 0  20px;
 }
@@ -357,7 +383,7 @@ i{
 .estimates__text{
     font-weight: 400;
     font-size: 36px;
-    line-height: 43px;
+    line-height: 120%;
     margin: 21px 0 19px 0;
 
 }
@@ -365,8 +391,12 @@ i{
 .estimates__name{
     font-weight: 400;
     font-size: 24px;
-    line-height: 29px;
+    line-height: 120%;
     color: rgba(255, 255, 255, 0.7);
+}
+
+.astras img{
+    width: 17px;
 }
 
 /*            */
@@ -407,7 +437,7 @@ footer{
 }
 
 .footer__list{
-    width: 100%;
+    width: 110%;
     margin-right: 30px;
 }
 
@@ -417,4 +447,312 @@ footer{
 
 .platform__menu__footer{
     width: 100%;
+}
+
+/*            */
+/*   MEDIA    */
+/*            */
+
+@media (max-width:1200px) {
+    .container{
+        width: 900px;
+    }
+    .sight{
+        padding: 194px 0 0 40px;
+    }
+    .textDecor{
+        width: 105%;
+    }
+    .platform{
+        width: 80%;
+    }
+    .info__num{
+        margin-top: 10px;
+    }
+    .info__title{
+        font-size: 50px;
+    }
+    .info__text{
+        font-size: 17px;
+    }
+    .biography__btn{
+        margin-top: 48px;
+    }
+    .biography__title{
+        font-size: 50px;
+    }
+    .biography__text{
+        font-size: 18px;
+    }
+    .subscribe__suptitle{
+        font-size: 16px;
+    }
+    .subscribe__title{
+        font-size: 62px;
+    }
+    .subscribe__form{
+        width: 60%;
+    }
+    .estimates__item{
+        padding: 43px 48px 40px 40px;
+    }
+    .estimates__text{
+        font-size: 25px;
+    }
+    .estimates__name{
+        font-size: 18px;
+    }
+    .footer__wrapper{
+        width: 60%;
+    }
+}
+
+@media (max-width:990px) {
+    .container{
+        width: 720px;
+    }
+    .header__menu{
+        width: 50%;
+    }
+    .sight{
+        padding: 20px 0 0 35px;
+        font-size: 55px;
+        width: 60%;
+    }
+    .textDecor{
+        width: 85%;
+        font-size: 55px;
+        line-height: 100%;
+    }
+    .textDecor h2{
+        font-size: 53px;
+    }
+    .textDecor h3{
+        font-size: 58px;
+    }
+    .episodes__title {
+        font-size: 50px;
+    }
+    .biography__btn{
+        width: 90px;
+        height: 90px;
+        margin-top: 28px;
+        padding-top: 25px;
+    }
+    .biography__text{
+        font-size: 16px;
+    }
+    .biography__text p {
+        margin-top: 18px;
+    }
+    .subscribe__title{
+        font-size: 48px;
+    }
+    .subscribe__form input {
+        height: 50px;
+        font-size: 22px;
+    }
+    .estimates__item{
+        padding: 43px 20px 40px 20px;
+    }
+    .footer__menu{
+        margin-right: 0;
+    }
+    .footer__list{
+        margin-right: 0;
+        width: 70%;
+    }
+    .footer__wrapper{
+        width: 70%;
+    }
+}
+
+@media (max-width:770px) {
+    .container{
+        width: 540px;
+    }
+    .sight{
+        padding: 15px 0 0 25px;
+        font-size: 40px;
+        width: 75%;
+    }
+    .textDecor h2{
+        font-size: 38px;
+    }
+    .textDecor h3{
+        font-size: 43px;
+    }
+    .platform{
+        width: 100%;
+    }
+    .episodes__header {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .episodes__title {
+        font-size: 43px;
+    }
+    .episodes__btn a{
+        padding: 12px 15px 8px 20px;
+    }
+    .episodes__item{
+        display: block;
+        padding: 35px 35px 40px 35px;
+    }
+    .episodes__item__image {
+        padding-right: 0;
+    }
+    .episodes__item__image img {
+        width: 100%;
+        height: 200px;
+        text-align: center;
+        object-fit: cover;
+    }
+    .info{
+        width: 100%;
+    }
+    .pivo{
+        display: grid;
+        grid-template-areas:
+            'negr'
+            'biog'
+    ;
+    }
+    .biography{
+        grid-area: biog;
+        margin-top: 25px;
+        justify-self: center;
+        width: 90%;
+    }
+    .pivo__photo{
+        grid-area: negr;
+        width: 100%;
+    }
+    .subscribe{
+        display: block;
+        padding: 40px 40px 55px 40px;
+
+    }
+    .subscribe__title{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .subscribe__form{
+        width: 100%;
+    }
+    .estimates{
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    footer{
+        display: block;
+    }
+    .footer__ls{
+        width: 40%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .footer__soclink{
+        margin: 0 auto;
+    }
+    .footer__wrapper{
+        width: 100%;
+        margin-top: 35px;
+    }
+
+}
+
+@media (max-width:540px) {
+    .container {
+        width: 320px;
+    }
+    .header__menu{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+    .home{
+        display: block;
+    }
+    .sight{
+        padding: 0;
+        width: 100%;
+    }
+    .textDecor{
+        width: 50%;
+    }
+    .platform{
+        padding-top: 25px;
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .episodes{
+        padding-bottom: 100px;
+    }
+    .episodes__header{
+        width: 100%;
+    }
+    .episodes__title{
+        font-size: 24px;
+        width: 60%;
+    }
+    .episodes__btn{
+        font-size: 14px;
+        height: 30px;
+        width: fit-content;
+    }
+    .episodes__btn a {
+        padding: 6px 7.5px 4px 8px;
+        height: 30px;
+    }
+    .episodes__btn.item{
+        width: fit-content;
+    }
+    .info__title {
+        font-size: 25px;
+    }
+    .info__text {
+        font-size: 14px;
+    }
+    .subscribe__title {
+        font-size: 36px;
+    }
+    .estimates__text {
+        font-size: 20px;
+    }
+    .estimates__name {
+        font-size: 16px;
+    }
+    .estimates__item {
+        padding: 23px 15px 20px 15px;
+    }
+    .astras img{
+        width: 12px;
+    }
+    .footer__ls {
+        width: 80%;
+    }
+    .footer__list{
+        width: 50%;
+    text-align: right;
+    }
+    .header__menu.footer__menu{
+        display: block;
+    }
+    .footer__wrapper{
+        display: block;
+    }
+    .poebota{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .poebota2{
+        margin: 0 auto;
+        width: 70%;
+        padding-top: 25px;
+    }
 }
