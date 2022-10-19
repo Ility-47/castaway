@@ -708,6 +708,7 @@ footer{
     .episodes__btn a {
         padding: 6px 7.5px 4px 8px;
         height: 30px;
+        width: 100%;
     }
     .episodes__btn.item{
         width: fit-content;
